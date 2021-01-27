@@ -11,72 +11,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; transition: 0.5s;}
+    .attribution a:last-child:hover {color: orange;}
   </style>
 </head>
 <body>
-  <div class="container-header">
-    <h1 class="header-1">Simple, traffic-based pricing</h1>
-    <h2 class="sub-header">Sign-up for our 30-day trial. No credit card required. </h2>
-  </div>
-  <div class="container-main">
-    <form action="">
-      <div class="top-section">
-        <div class="views"><span class="views-text">Pageviews</span></div>
-        <div class="pricing">$<span class="price-amount"></span>/month</div>
-      </div>
-      <div class="bar">
-        <input id="rangeInput" type="range" min="10" max="1000" step="10">
-      </div>
-      <div class="billing">
-        <span class="mothly"></span>
-        <label for="" class="switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
-        <div class="year-wrapper">
-          <span class="yearly-text"></span>
-          <div class="dicount"></div>
+  <div class="container">
+    <div class="container-header">
+      <h1 class="header-1">Simple, traffic-based pricing</h1>
+      <span class="sub-header">Sign-up for our 30-day trial. No credit card required. </span>
+    </div>
+    <div class="container-main">
+      <form action="#">
+        <div class="top-section">
+          <div class="views"><span class="views-text">100K Pageviews</span></div>
+          <div class="pricing">
+            <span class="price-amount">$16.00</span>
+            <span class="price-dating">/month</span>
+          </div>
         </div>
-      </div>
-      <div class="container-footer">
-        <div class="advantages">
-          <ul class="adv-list">
-            <li class="list-item list-item-1"></li>
-            <li class="list-item list-item-2"></li>
-            <li class="list-item list-item-3"></li>
-          </ul>
+        <div class="bar">
+          <input class="slider" id="rangeInput" type="range" min="10" max="1000" step="10" value="505">
         </div>
-        <div class="btn bnt-submit"></div>
-      </div>
-    </form>
+        <div class="billing">
+          <div class="monthly-wrapper">
+            <span class="monthly">Monthly Billing</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider-box round"></span>
+          </label>
+          <div class="year-wrapper">
+            <span class="yearly-text">Yearly Billing</span>
+            <span class="discount">25% discount</span>
+          </div>
+        </div>
+        <div class="container-footer">
+          <div class="advantages">
+            <ul class="adv-list">
+              <li class="list-item list-item-1">Unlimited websites</li>
+              <li class="list-item list-item-2">100% data ownership</li>
+              <li class="list-item list-item-3">Email reports</li>
+            </ul>
+          </div>
+          <div class="btn bnt-submit">
+            <span class="btn-value">Start my trial</span>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
+ 
+
+  
   
   
 
   
-  
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/maksimcoder">Maksim Deviatilov</a>.
   </div>
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
 </body>
 </html>
