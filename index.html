@@ -1,9 +1,4 @@
-<!-- 
-1 - Сделать верстку блоков (flex/grid)
-2 - Сделать интерактив ползунка
-  2.1 - Реализовать проверку кол-ва подписчиков 
-  2.2 - Реализовать разный шаг кол-ва подписчиков (через проверку) 
--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,21 +29,21 @@
     <div class="container-main">
       <form action="#">
         <div class="top-section">
-          <div class="views"><span class="views-text">100K Pageviews</span></div>
+          <div class="views"><span class="views-text">10K pageviews</span></div>
           <div class="pricing">
             <span class="price-amount">$16.00</span>
             <span class="price-dating">/month</span>
           </div>
         </div>
         <div class="bar">
-          <input class="slider" id="rangeInput" type="range" min="10" max="1000" step="10" value="505">
+          <input class="slider" id="rangeInput" type="range" min="10" max="110" step="25" value="10">
         </div>
         <div class="billing">
           <div class="monthly-wrapper">
             <span class="monthly">Monthly Billing</span>
           </div>
           <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox">
             <span class="slider-box round"></span>
           </label>
           <div class="year-wrapper">
@@ -83,6 +78,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/maksimcoder">Maksim Deviatilov</a>.
   </div>
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </body>
 </html>
