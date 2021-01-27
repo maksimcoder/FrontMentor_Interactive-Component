@@ -167,7 +167,7 @@ ul {
     width: 150px;
     background-color: hsl(227, 35%, 25%);
     border-radius: 50px;
-    
+    cursor: pointer;
 }
 
 .btn > span {
