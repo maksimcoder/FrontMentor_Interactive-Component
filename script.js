@@ -23,20 +23,29 @@ let pricingList = {
 span.textContent = '10K pageviews';
 price.textContent = `$${pricingList[0]}.00`;
 
+
 function getYearPrice(oldObj) {
     const values = Object.values(oldObj);
     let newArr = [];
     values.forEach(item => {
         if (item.length < 5) {
-            newArr.push((item * 12) - (item * 12 * 25 /100));
+            newArr.push(((item * 12) - (item * 12 * 25 /100)) / 12);
         } else {
-            newArr.push((item * 12) - (item * 12 * 25 /100));
+            newArr.push(((item * 12) - (item * 12 * 25 /100)) / 12);
         }
     });
     const newObj = Object.assign({}, newArr);
     return newObj;
 }
 
+function changePricingContent() {
+    checkbox.addEventListener('click', () => {
+        const event = new Event('input');
+        input.dispatchEvent(event);
+        console.log(123);
+    });
+}
+changePricingContent();
 
 
 function changeRangeValue(range, viewers, pricing, isYear) {
